@@ -43,7 +43,7 @@ if owner not in SUDOERS:
 
 @bot.on_message(filters.command(["start"]) & SUDOERS)
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"BOT MADE BY - ꧁𓊈𒆜🅲🆁🅰🆉🆈_🅼🅸🅽🅳𒆜𓊉꧂ [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nGIVE COMMAND - /Aaradhya")
+    editable = await m.reply_text(f"BOT MADE BY - 🅲🆁🅰🆉🆈_🅼🅸🅽🅳 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nGIVE COMMAND - /Aaradhya")
 
 
 @bot.on_message(filters.command("stop") & SUDOERS)
