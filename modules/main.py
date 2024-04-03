@@ -43,7 +43,7 @@ if owner not in SUDOERS:
 
 @bot.on_message(filters.command(["start"]) & SUDOERS)
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"BOT MADE BY - TITANIC  [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nGIVE COMMAND - /TITANIC")
+    editable = await m.reply_text(f"BOT MADE BY - ꧁𓊈𒆜🅲🆁🅰🆉🆈_🅼🅸🅽🅳𒆜𓊉꧂ [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nGIVE COMMAND - /Aaradhya")
 
 
 @bot.on_message(filters.command("stop") & SUDOERS)
@@ -53,7 +53,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["TITANIC"]) & SUDOERS)
+@bot.on_message(filters.command(["Aaradhya"]) & SUDOERS)
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('GIVE ME TXT FILE')
     input: Message = await bot.listen(editable.chat.id)
@@ -157,7 +157,7 @@ async def account_login(bot: Client, m: Message):
 
             elif '/master.mpd' in url:
              id =  url.split("/")[-2]
-             url =  "https://d26g5bnklkwsh4.cloudfront.net/" + id + "/master.m3u8"
+             url =  "https://psitoffers.store/testkey.php?vid=" + id
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
             name = f'{str(count).zfill(3)}) {name1[:60]}'
@@ -218,7 +218,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text(" D O N E ")
+    await m.reply_text(" 🅳🅾🅽🅴 ")
 
 
 bot.run()
