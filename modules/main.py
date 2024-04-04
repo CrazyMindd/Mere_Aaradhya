@@ -43,7 +43,7 @@ if owner not in SUDOERS:
 
 @bot.on_message(filters.command(["start"]) & SUDOERS)
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"BOT MADE BY - 🅲🆁🅰🆉🆈_🅼🅸🅽🅳 [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nGIVE COMMAND - /Aaradhya")
+    editable = await m.reply_text(f"BOT MADE BY - ꧁𓊈𒆜🅲🆁🅰🆉🆈_🅼🅸🅽🅳𒆜𓊉꧂ [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nGIVE COMMAND - /Aaradhya")
 
 
 @bot.on_message(filters.command("stop") & SUDOERS)
@@ -157,7 +157,7 @@ async def account_login(bot: Client, m: Message):
 
             elif '/master.mpd' in url:
              id =  url.split("/")[-2]
-             url =  "https://psitoffers.store/testkey.php?vid=" + id
+             url =  "https://d26g5bnklkwsh4.cloudfront.net/" + id + "/master.m3u8"
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
             name = f'{str(count).zfill(3)}) {name1[:60]}'
@@ -174,8 +174,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**Vid_id  »** {str(count).zfill(3)}\n\n**Title  »** {name1} {res} TITANIC.mkv\n\n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
-                cc1 = f'**Vid_id  »** {str(count).zfill(3)}\n\n**Title »** {name1} TITANIC.pdf \n\n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
+                cc = f'**Vid_id  »** {str(count).zfill(3)}\n\n**Title  »** {name1} {res} 🅲🆁🅰🆉🆈_🅼🅸🅽🅳.mkv\n\n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
+                cc1 = f'**Vid_id  »** {str(count).zfill(3)}\n\n**Title »** {name1} 🅲🆁🅰🆉🆈_🅼🅸🅽🅳.pdf \n\n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
